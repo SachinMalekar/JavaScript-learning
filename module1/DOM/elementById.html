@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-practice</title>
+    <style>
+        /* .red-color {
+            color: red;
+        }
+        .under-line {
+            text-decoration: underline;
+        } */
+    </style>
+</head>
+<body>
+    <div class="block">
+        <h4> Hey There, My name is <span class="red-color" id="username"> <p> Sachin Malekar </p></span></h4>
+        <p class="paragraph">Here is a code for you </p>
+        <pre><code> console.log('hey there')</code></pre>
+    </div>
+    <script>
+        const el = document.getElementById('username')
+        el.innerText = "Captain America"
+        // el.classList.add("red-color","under-line")
+        el.style.textDecoration = "underline"
+        el.style.color = "tomato"
+        el.parentElement.style.background = "grey" 
+        console.log(el);
+    </script>
+</body>
+</html>

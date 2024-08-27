@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+
+<body>
+    <div class="block">
+        <h4> Hey There my name is <span id="username"> <p> Sachin Malekar </p></span></h4>
+        <p class="paragraph">Here is a code for you </p>
+        <pre><code> console.log('hey there')</code></pre>
+    </div>
+    <div class="block">
+        <h4> Hey There my name is <span id="username"> <p> Sachin Malekar </p></span></h4>
+        <p class="paragraph">Here is a code for you </p>
+        <pre><code> console.log('hey there')</code></pre>
+    </div>
+    <script>
+        // query selector
+        /*
+           selectors
+           - tag name
+           - id #
+           - class .
+        */
+            // const body = document.querySelector('body')
+            const username  = document.querySelector('#username')
+            // body.innerHTML = "<h1> Hacked </h1>";
+            console.log(username.innerHTML)
+            console.log(username.innerText)
+
+            const ele = document.querySelectorAll(".block")
+            ele.forEach((e)=>{
+                console.log(e)
+            })
+            console.log(ele)
+;    </script>
+</body>
+
+</html>
